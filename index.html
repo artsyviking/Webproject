@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>JS Site: Janken </title>
+    <title>JS Site: Janken</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Rock Paper Scissors</h1>
     </header>
+    <div>
+        <img onclick="compare(2)" src="images/rock.jpeg" width="500px" alt="rock" />
+        <img onclick="compare(1)" src="images/paper.jpeg" width="500px" alt="paper" />
+        <img onclick="compare(3)" src="images/scissors.jpeg" width="500px" alt="scissors" />
+    </div>
+    <p id="outcomeText">
+        Please select an option.
+    </p>
 </body>
+
+</html>
