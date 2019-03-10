@@ -8,6 +8,11 @@ Paper = 1
 Rock = 2
 Scissors = 3
 */
+function imageClick() {
+    
+}
+
+
 function compare(playerChoice) {
     let npcChoice = this.npc();
 
