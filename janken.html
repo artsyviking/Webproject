@@ -12,11 +12,13 @@
         <h1>Rock Paper Scissors</h1>
     </header>
     <div>
-        <img onclick="compare(2)" src="images/rock.jpeg" width="500px" alt="rock" />
-        <img onclick="compare(1)" src="images/paper.jpeg" width="500px" alt="paper" />
-        <img onclick="compare(3)" src="images/scissors.jpeg" width="500px" alt="scissors" />
+        <ul class="jankenlist">
+            <li><img onclick="compare(2)" src="images/rock.jpeg" width="500px" alt="rock" class="jankenimg" /></li>
+            <li><img onclick="compare(1)" src="images/paper.jpeg" width="500px" alt="paper" class="jankenimg" /></li>
+            <li><img onclick="compare(3)" src="images/scissors.jpeg" width="500px" alt="scissors" class="jankenimg" /></li>
+        </ul>
     </div>
-    <p id="outcomeText">
+    <p class="outcomeText" id="outcomeText">
         Please select an option.
     </p>
 </body>

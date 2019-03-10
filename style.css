@@ -1,7 +1,34 @@
 html {
-    background-color: black;
+    background-color: rgb(31, 62, 102);
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-align: center;
 }
 
 header {
-    text-align: center;
+    font-size: 140%;
+}
+
+.jankenlist {
+    list-style: none;
+}
+
+.jankenimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: rgb(235, 194, 61);
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+#outcomeText {
+    font-size: 150%;
+    border-style: solid;
+    border-color: rgb(235, 194, 61);
+    display: inline-block;
+    padding: .5em;
+    margin: 1em;
+    overflow: hidden;
 }
