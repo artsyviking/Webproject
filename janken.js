@@ -9,13 +9,26 @@ Rock = 2
 Scissors = 3
 */
 function imageClick() {
-    
+    addEventListener('rock', 2);
+    addEventListener('paper', 1);
+    addEventListener('scissors', 3);
 }
 
+function addEventListener(id, num) {
+    // let node = document.createElement('li');
+    // node.classList.add('hilonumber');
+    // node.innerText = 'does this work?';
+
+    let jankenElement = document.getElementById(id);
+    // jankenElement.appendChild(node);
+    jankenElement.addEventListener('click', (event) => {
+        compare(num);
+    });
+}
 
 function compare(playerChoice) {
     let npcChoice = this.npc();
-
+    
     if (playerChoice === npcChoice) {
         this.outputResults('This round ends in a draw!');
         //This is a draw!
@@ -54,3 +67,5 @@ function outputResults(result) {
     let outcomeElement = document.getElementById('outcomeText');
     outcomeElement.innerText = result;
 }
+
+imageClick();

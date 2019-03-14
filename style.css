@@ -9,6 +9,11 @@ header {
     font-size: 140%;
 }
 
+body {
+    border-style: solid;
+    border-color: rgb(235, 194, 61);
+}
+
 .jankenlist {
     list-style: none;
     display: grid;

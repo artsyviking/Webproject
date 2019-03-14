@@ -4,7 +4,6 @@
 <head>
     <title>JS Site: Janken</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="janken.js"></script>
 </head>
 
 <body>
@@ -13,14 +12,17 @@
     </header>
     <div>
         <ul class="jankenlist">
-            <li><img onclick="compare(2)" src="images/rock.jpeg" alt="rock" class="jankenimg" /></li>
-            <li><img onclick="compare(1)" src="images/paper.jpeg" alt="paper" class="jankenimg" /></li>
-            <li><img onclick="compare(3)" src="images/scissors.jpeg" alt="scissors" class="jankenimg" /></li>
+            <li><img src="images/rock.jpeg" alt="rock" class="jankenimg" id="rock" /></li>
+            <li><img src="images/paper.jpeg" alt="paper" class="jankenimg" id="paper" /></li>
+            <li><img src="images/scissors.jpeg" alt="scissors" class="jankenimg" id="scissors" /></li>
         </ul>
     </div>
+    
     <p id="outcomeText">
         Please select an option.
     </p>
+
+    <script src="janken.js"></script>
 </body>
 
 </html>
