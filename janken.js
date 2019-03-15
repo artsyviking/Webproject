@@ -63,4 +63,6 @@ function outputResults(result) {
     outcomeElement.innerText = result;
 }
 
+//setTimeout(outputResults, 100, result); Doesn't work, undefined
+
 imageClick();
