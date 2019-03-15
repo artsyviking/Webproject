@@ -15,12 +15,7 @@ function imageClick() {
 }
 
 function addEventListener(id, num) {
-    // let node = document.createElement('li');
-    // node.classList.add('hilonumber');
-    // node.innerText = 'does this work?';
-
     let jankenElement = document.getElementById(id);
-    // jankenElement.appendChild(node);
     jankenElement.addEventListener('click', (event) => {
         compare(num);
     });
