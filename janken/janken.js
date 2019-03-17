@@ -17,8 +17,14 @@ function imageClick() {
 function addEventListener(id, num) {
     let jankenElement = document.getElementById(id);
     jankenElement.addEventListener('click', (event) => {
-        compare(num);
+        compareWithDelay(num);
     });
+}
+
+function compareWithDelay(playerChoice) {
+    setTimeout(() => {
+        compare(playerChoice);
+    }, 1000);
 }
 
 function compare(playerChoice) {
@@ -62,7 +68,5 @@ function outputResults(result) {
     let outcomeElement = document.getElementById('outcomeText');
     outcomeElement.innerText = result;
 }
-
-//setTimeout(outputResults, 100, result); Doesn't work, undefined
 
 imageClick();
