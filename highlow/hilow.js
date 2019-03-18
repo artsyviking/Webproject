@@ -6,57 +6,39 @@ function hundred() {
         node.innerText = i;
         let numbers = document.getElementById('numbers');
         numbers.appendChild(node);
-    }
-}
-
-function numberClick() {
-    for (let i = 1; i <= 100; i++) {
-        addEventListener(i);
-    }
-}
-
-function addEventListener(num) {
-    let numberElement = document.getElementById(num.toString());
-    numberElement.addEventListener('click', (event) => {
-        numTriesRemaining--;
-        compare(num);
-        let livesId = document.getElementById('lives');
-        if (numTriesRemaining <= 0 && num !== play){
-            numberGen();
-            numTriesRemaining = 10;
-            this.outputResults('You ran out of tries! You lose!');
+        function numberClick() {
+            addEventListener(document.id(this.i.toString), this.i);
         }
-        livesId.innerText = numTriesRemaining;
+    }
+}
+
+function numberGen() {
+    let play = Math.ceil(Math.random() * 100); 
+    return play;
+}
+
+function addEventListener(id, num) {
+    let highLowElement = document.getElementById(id);
+    highLowElement.addEventListener('click', (event) => {
+        compareWithDelay(num);
     });
 }
 
-var numTriesRemaining = 10;
-
-function numberGen() {
-    play = Math.ceil(Math.random() * 100);
+function compareWithDelay(playerChoice) {
+    setTimeout(() => {
+        compare(playerChoice);
+    }, 1000);
 }
 
-var play;
-
-// function compareWithDelay(playerChoice) {
-//     setTimeout(() => {
-//         compare(playerChoice);
-//     }, 1000);
-// }
-
 function compare(playerChoice) {
-    let npcChoice = play;
+    let npcChoice = this.numberGen();
     if (playerChoice < npcChoice) {
-        this.outputResults('Too low!');
+        outputResults("Too low!");
     } else if (playerChoice === npcChoice) {
-        this.outputResults('You got it!');
-        numberGen();
-        numTriesRemaining = 10;
+	    outputResults("You got it!");
 	} else if (playerChoice > npcChoice) {
-		this.outputResults('Too high!');
-	} else {
-        this.outputResults('You broke the game!?');
-    }
+		outputResults("Too high!");
+	}
 }
 
 function outputResults(result) {
@@ -65,8 +47,6 @@ function outputResults(result) {
     outcomeElement.innerText = result;
 }
 
-window.onload = () => {
-    hundred();
-    numberClick();
-    numberGen();
-}
+window.onload = () => hundred();
+
+numberClick();

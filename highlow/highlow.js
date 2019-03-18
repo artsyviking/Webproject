@@ -47,13 +47,13 @@ var play;
 function compare(playerChoice) {
     let npcChoice = play;
     if (playerChoice < npcChoice) {
-        this.outputResults('Too low!');
+        this.outputResults('Wrong! Too low!');
     } else if (playerChoice === npcChoice) {
-        this.outputResults('You got it!');
+        this.outputResults('You win! You found the number!');
         numberGen();
         numTriesRemaining = 10;
 	} else if (playerChoice > npcChoice) {
-		this.outputResults('Too high!');
+		this.outputResults('Wrong! Too high!');
 	} else {
         this.outputResults('You broke the game!?');
     }
