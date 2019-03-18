@@ -14,9 +14,10 @@ h1 {
 }
 
 #numbers {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto auto auto auto auto auto auto auto auto; */
+    /* list-style: none; */
     font-size: 180%;
 
 }
@@ -25,12 +26,12 @@ h1 {
     border-style: solid;
     border-color: rgb(235, 194, 61);
     border-radius: 1em;
-    padding: 1em;
-    margin: 1em;
+    padding: 0.45em;
+    margin: 0.45em;
     display: inline-block;
     background-color: rgba(255, 255, 255, .1);
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.4em;
+    height: 1.4em;
     opacity: .7;
 }
 .hilonumber:hover {
@@ -38,6 +39,12 @@ h1 {
     filter: alpha(opacity=100);
 }
 
-[id='1'] {
-    background-color: rgba(255, 255, 255, .2)
+.pStyle {
+    font-size: 160%;
+    border-style: solid;
+    border-color: rgb(235, 194, 61);
+    border-radius: 1em;
+    padding: .7em;
+    margin: .7em;
+    display: inline-block;
 }
