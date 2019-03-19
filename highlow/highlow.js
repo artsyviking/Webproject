@@ -21,7 +21,7 @@ function addEventListener(num) {
         numTriesRemaining--;
         compare(num);
         let livesId = document.getElementById('lives');
-        if (numTriesRemaining <= 0 && num !== play){
+        if (numTriesRemaining <= 0 && num !== play) {
             numberGen();
             numTriesRemaining = 10;
             this.outputResults('You ran out of tries! You lose!');
@@ -49,19 +49,19 @@ function compare(playerChoice) {
     if (playerChoice < npcChoice) {
         this.outputResults('Wrong! Too low!');
     } else if (playerChoice === npcChoice) {
-        this.outputResults('You win! You found the number!');
+        this.outputResults('You guessed the number, you win!');
         numberGen();
         numTriesRemaining = 10;
-	} else if (playerChoice > npcChoice) {
-		this.outputResults('Wrong! Too high!');
-	} else {
+    } else if (playerChoice > npcChoice) {
+        this.outputResults('Wrong! Too high!');
+    } else {
         this.outputResults('You broke the game!?');
     }
 }
 
 function outputResults(result) {
-    let outcomeElement = document.getElementById('outcomeText'); 
-   //make an id of outcomeText in HTML!
+    let outcomeElement = document.getElementById('outcomeText');
+    //make an id of outcomeText in HTML!
     outcomeElement.innerText = result;
 }
 

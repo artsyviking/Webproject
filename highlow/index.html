@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>High Low Game</title>
 </head>
+
 <body>
     <h1>The High Low Number Game!</h1>
-    
-    <p class="pStyle" id="outcomeText">
-            Click a number to guess!
-        </p>
-        <p class="pStyle">
-            Lives: <span id="lives">10</span>
-        </p>
 
-    <ul id="numbers">
-        <!-- These will be dynamically generated via javascript -->
-    </ul>
+    <p class="pStyle" id="outcomeText">
+        Click a number to guess!
+    </p>
+
+    <p class="pStyle" id="livesp">
+        <span id="liveSpan">Lives: <span id="lives">10</span></span>
+    </p>
+    <div>
+        <ul id="numbers">
+            <!-- These will be dynamically generated via javascript -->
+        </ul>
+    </div>
 
     <script src="highlow.js"></script>
 </body>
+
 </html>
