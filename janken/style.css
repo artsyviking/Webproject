@@ -51,11 +51,12 @@ header {
     background-color: rgba(255,255,255, .05);
     display: inline-block;
     padding: .5em;
-    margin-top: 3em;
+    margin: 1em;
     overflow: hidden;
 }
 
 #loadingGif {
     width: 5em;
     text-align: center;
+    margin: 3em;
 }
