@@ -9,12 +9,12 @@ h1 {
     border-style: solid;
     border-top-right-radius: .2em;
     border-bottom-right-radius: .2em;
-    border-color: rgb(238, 190, 34);
-    background-image: linear-gradient(rgb(235, 194, 60), rgb(212, 170, 31));
+    border-color: rgb(255, 205, 43);
+    background-image: linear-gradient(rgb(255, 205, 43), rgb(212, 170, 31));
     padding: .6em;
     display: left;
     margin: 1em 0em 0em 0em;
-    width: 97.5%;
+    width: 96.75%;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
     border-bottom-right-radius: .8em;
     border-bottom-left-radius: .8em;
     border-color: rgb(238, 190, 34);
-    background-image: linear-gradient(rgb(235, 194, 60), rgb(212, 170, 31));
+    background-image: linear-gradient(rgb(255, 205, 43), rgb(212, 170, 31));
     padding: .8em;
     display: inline-block;
     font-weight: bold;
@@ -54,7 +54,7 @@ body {
     border-bottom-right-radius: .8em;
     border-bottom-left-radius: .8em;
     border-color: rgb(238, 190, 34);
-    background-image: linear-gradient(rgb(235, 194, 60), rgb(212, 170, 31));
+    background-image: linear-gradient(rgb(255, 205, 43), rgb(212, 170, 31));
     padding: 0.5em;
     margin: 0.5em;
     display: block;
@@ -64,7 +64,7 @@ body {
 
 .hilonumber:hover {
     border-color: rgb(238, 190, 34);
-    background-image: linear-gradient(rgba(212, 170, 31, 0.8), rgba(212, 170, 31, 0.8));
+    background-image: linear-gradient(rgba(255, 205, 43, 0.8), rgba(212, 170, 31, 0.8));
     filter: alpha(opacity=100);
     cursor: default;
 }

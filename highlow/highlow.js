@@ -38,12 +38,6 @@ function numberGen() {
 
 var play;
 
-// function compareWithDelay(playerChoice) {
-//     setTimeout(() => {
-//         compare(playerChoice);
-//     }, 1000);
-// }
-
 function compare(playerChoice) {
     let npcChoice = play;
     if (playerChoice < npcChoice) {
@@ -61,7 +55,6 @@ function compare(playerChoice) {
 
 function outputResults(result) {
     let outcomeElement = document.getElementById('outcomeText');
-    //make an id of outcomeText in HTML!
     outcomeElement.innerText = result;
 }
 
