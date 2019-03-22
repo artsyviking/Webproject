@@ -19,7 +19,7 @@ function addEventListener(id, num) {
     jankenElement.addEventListener('click', (event) => {
         compareWithDelay(num);
         let loadingElement = document.getElementById(loadingGif);
-        loadingElement.setAttribute("src", "loading_gif.gif");
+        loadingElement.setAttribute("src", "images/loading_gif.gif");
     });
 }
 
