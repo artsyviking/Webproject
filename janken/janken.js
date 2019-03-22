@@ -66,6 +66,7 @@ function compare(playerChoice) {
 }
 
 function outputResults(result) {
+    document.getElementById('loadingGif').removeAttribute('src');
     let outcomeElement = document.getElementById('outcomeText');
     outcomeElement.innerText = result;
 }
