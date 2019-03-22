@@ -54,3 +54,7 @@ header {
     margin-top: 3em;
     overflow: hidden;
 }
+
+#loadingGif {
+    width: 5em;
+}
