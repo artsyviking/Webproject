@@ -36,10 +36,6 @@ body {
     margin: 1.5em 1em 0.2em 2em;
 }
 
-#livesp {
-    
-}
-
 #numbers {
     display: flex;
     flex-wrap: wrap;

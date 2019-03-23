@@ -26,7 +26,7 @@ function addEventListener(id, num) {
 function compareWithDelay(playerChoice) {
     setTimeout(() => {
         compare(playerChoice);
-    }, Math.ceil(Math.random() * 1500));
+    }, 400*(Math.random() * 3));
 }
 
 function compare(playerChoice) {
