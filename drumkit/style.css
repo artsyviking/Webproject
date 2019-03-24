@@ -1,3 +1,26 @@
 html {
     background-image: url('images/concert.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    font-size: 250%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.keys {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: black;
+    border-style: solid;
+    border-width: .1em;
+    display: inline-block;
+    padding: .5em .9em .5em .9em;
+    margin: .1em;
+    background-color: rgba(0,0,0,.4);
+}
+
+#keyClick {
+    box-shadow: 3px 3px 3px 3px rgb(255, 208, 106);
+    border-color: rgb(255, 208, 106);
 }
